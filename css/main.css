@@ -1,0 +1,147 @@
+/* 默认样式重置 */
+*{
+    padding: 0;
+    margin: 0;
+}
+body,
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+dl,
+dd {
+    margin:0;
+    font-family: "微软雅黑";
+}
+body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: #fff;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    display: block;
+}
+i{
+    margin: 0 5px;
+}
+
+/* --------------------------- */
+#page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+#header{
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+#content{
+    flex: 9;
+    display: flex;
+}
+#tree-menu{
+    flex: 2;
+}
+#folder-content{
+    flex: 8;
+}
+#header #logo{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#header .top-nav{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .top-nav a{
+    margin: 0 30px;
+    color: #66757f;
+    font-size: 14px;
+}
+#tree-menu{
+    padding-top: 15px;
+    border-top: 1px solid #e1e8ed;
+    border-right: 1px solid #e1e8ed;
+}
+#tree-menu ul p{
+    padding-left: 18px;
+}
+#tree-menu ul li {
+    padding-left: 27px;
+}
+ul p,ul li{
+    font-size: 14px;
+    color: #66757f;
+    height: 30px;
+    line-height: 30px;
+}
+#tree-menu ul .active{
+    background-color:#e1e8ed;
+}
+#tree-menu ul li:hover{
+    background-color: #f0f3f6;
+    cursor: pointer;
+}
+#folder-content{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e1e8ed;
+    border-left: 1px solid #e1e8ed;
+}
+#bread-nav{
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #e1e8ed;
+}
+#folders{
+    flex: 1;
+    background-color: #f5f8fa;
+    overflow: auto;
+}
+#checked-all{
+    margin: 0 15px;
+}
+#folders ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#folders .folder-item{
+    margin: 20px 0 0 20px;
+    width: 180px;
+    height: 180px;
+    background-color: #ebeff0;
+    border-radius: 5px;
+}
+#folders .folder-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#folders .folder-item .folder-name{
+
+}
+#folders .folder-item .check-item{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 9px;
+    top:9px;
+}
+#folders .folder-item:hover{
+    background-color: white;
+}
